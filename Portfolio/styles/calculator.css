@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.calculator {
+  background-color: #000;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 320px;
+  padding: 20px 10px;
+}
+
+.display {
+  color: white;
+  font-size: 4rem;
+  text-align: right;
+  padding: 20px 10px;
+  min-height: 80px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button base style */
+.btn {
+  font-size: 2rem;
+  padding: 20px 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 0.2s;
+}
+
+/* Button types */
+.number {
+  background-color: #bb00ff;
+  color: white;
+}
+
+.operator {
+  background-color: #00ffd9;
+  color: black;
+}
+
+.utility {
+  background-color: #808080;
+  color: black;
+}
+
+.equals {
+  background-color: #00ffd9;
+  color: black;
+}
+
+
+.zero {
+  grid-column: span 2;
+  border-radius: 35px;
+  justify-content: flex-start;
+  padding-left: 28px;
+  width: 150px;
+}
+
+.btn:hover {
+  filter: brightness(5);
+}
+
+
+
+
+

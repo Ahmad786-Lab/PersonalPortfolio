@@ -1,0 +1,224 @@
+:root {
+  --gold: #D3AF37;
+  --light: #D9D9D9;
+  --dark: #1E1E1E;
+}
+                       /* Images On the Top */
+.Any-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 6px solid #D3AF37;
+}
+.Any-img2 {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 4px solid #D3AF37;
+}
+
+
+.section-title {
+  scroll-margin-top: 6rem;
+}
+
+/* gold button variant */
+.btn-gold {
+  background-color: #D3AF37;
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+.btn-gold:hover {
+  background-color: #b9962f;
+  color: #000;
+}
+
+/* page basics */
+body {
+  font-family: "Orbitron", "Rajdhani", "Share Tech Mono", monospace; 
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--dark);
+  color: var(--light);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* make text a bit bigger on bigger screens */
+@media (min-width: 768px) {
+  body { font-size: 18px; }
+}
+@media (min-width: 1024px) {
+  body { font-size: 19px; }
+}
+
+/* header with a simple line */
+header {
+  background-color: var(--dark);
+  text-align: center;
+  padding: 18px 0;
+  border-bottom: 2px solid var(--gold);
+}
+
+/* titles */
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff; /* clearer main title */
+  text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--gold);
+  text-transform: none;
+  border-bottom: 2px solid var(--gold);
+  display: block;
+  width: fit-content;
+  margin: 12px auto 8px;
+  padding-bottom: 4px;
+}
+
+h3 { color: var(--light); }
+
+h4 {
+  display: block;
+  width: fit-content;
+  margin: 8px auto;
+  color: var(--gold);
+  font-weight: 700;
+}
+                   /* Navbar */
+
+/* bootstrap navbar links */
+.navbar-dark .navbar-nav .nav-link {
+  color: #f8f9fa !important;
+  font-weight: 600;
+  transition: color 0.3s ease, background-color 0.3s ease; 
+  display: inline-block;
+  padding: 0.5rem 1rem; 
+  border-radius: 6px; 
+}
+.navbar .navbar-nav .nav-link {
+  line-height: 1.5;      /* this controls the spacing vertical  */
+}
+.navbar .navbar-nav .nav-item {
+  display: flex;
+  align-items: center;   /* centers link text vertically */
+}
+/* Hover and focus */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  background-color: var(--gold);
+  color: #121212 !important;
+  border-color: var(--gold);
+}
+/* That is a brand link Wfor the Welcome on the leeft Top Coner */
+.navbar-dark .navbar-brand {
+  color: #f8f9fa;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* sections look like simple cards */
+section {
+  padding: 18px;
+  margin: 16px;
+  border-radius: 10px;
+  background-color: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  border: 1px solid #333;
+  color: var(--light);
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* paragraphs & lists */
+p, li {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  margin-left: 0;
+  color: var(--light);
+}
+
+ul, ol { padding-left: 1.2rem; }
+li + li { margin-top: 6px; }
+
+/* images */
+img {
+  border: 3px solid var(--gold);
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* footer */
+footer {
+  background-color: #141414;
+  color: #aaaaaa;
+  padding: 14px;
+  margin-top: 24px;
+  border-top: 1px solid #2a2a2a;
+  font-size: 0.95rem;
+}
+
+/* generic .btn override (you use .btn + .btn-gold) */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: var(--gold);
+  color: #121212;
+  font-weight: 700;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #c39a2f;
+  border-color: #c39a2f;
+}
+
+
+
+.badge {
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:8px 16px;
+  font-weight:600;
+  letter-spacing:.02em;
+  border-width:1px; 
+  transition: transform .18s ease, box-shadow .25s ease, filter .25s ease;
+  will-change: transform, box-shadow;
+  }
+  
+  /* Hover efect for the BADGE*/
+  .badge:hover {
+  transform: translateY(-2px);
+  box-shadow:
+  0 0 0 1px currentColor inset, 
+  0 0 14px currentColor, 
+  0 6px 20px rgba(0,0,0,.6); 
+  filter: brightness(1.06); 
+  }
+  
+  /* keep it Active */
+  .badge:active {
+  transform: translateY(0);
+  box-shadow:
+  0 0 0 1px currentColor inset,
+  0 0 8px currentColor,
+  0 3px 10px rgba(0,0,0,.65);
+  filter: brightness(1);
+  }
+
+
+

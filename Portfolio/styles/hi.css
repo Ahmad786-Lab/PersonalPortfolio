@@ -1,0 +1,229 @@
+/* simple cs portfolio style by a new coder :) */
+/* colors i will use */
+:root {
+    --gold: #D3AF37;
+    --light: #D9D9D9;
+    --dark: #1E1E1E;
+  }
+  
+  
+  .hero-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 6px solid #D3AF37;
+  }
+  .hero-img2 {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 4px solid #D3AF37;
+  }
+  .section-title {
+    scroll-margin-top: 6rem;   
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+  }
+  .btn-gold {
+    background-color: #D3AF37;
+    border: none;
+    color: #000;
+    font-weight: 600;
+  }
+  .btn-gold:hover {
+    background-color: #b9962f;
+    color: #000;
+  }
+  
+  /* page basics */
+  body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--dark);
+    color: var(--light);
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+  }
+  
+  /* make text a bit bigger on bigger screens */
+  @media (min-width: 768px) {
+    body { font-size: 18px; }
+  }
+  @media (min-width: 1024px) {
+    body { font-size: 19px; }
+  }
+  
+  /* header with a simple line */
+  header {
+    background-color: var(--dark);
+    text-align: center;
+    padding: 18px 0;
+    border-bottom: 2px solid var(--gold); 
+  }
+  
+  /* titles */
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff; /* clearer main title */
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4); 
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: var(--gold);
+    text-transform: none; 
+    border-bottom: 2px solid var(--gold);
+    display: block;
+    width: fit-content;
+    margin: 12px auto 8px;
+    padding-bottom: 4px;
+  }
+  
+  h3 { color: var(--light); 
+    
+  }
+  
+  h4 {
+    display: block;
+    width: fit-content;
+    margin: 8px auto;
+    color: var(--gold);
+    font-weight: 700;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa !important; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }  
+  
+  
+  nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    /* so hover doesn’t shift */
+    border: 1px solid transparent;
+    display: inline-block;
+  } 
+  
+  
+  nav a:hover {
+    background-color: var(--gold);
+    color: #121212;
+    border-color: var(--gold);
+  }
+  
+  
+  /* circular links area */
+  #links {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  #links li {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    background-color: #2a2a2a;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  #links li:hover {
+    background-color: var(--gold);
+    color: #111;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  
+  /* sections look like simple cards */
+  section {
+    padding: 18px;
+    margin: 16px;
+    border-radius: 10px;
+    background-color: #222; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    border: 1px solid #333;
+    color: var(--light);
+    text-align: left; 
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* paragraphs & lists made cleaner (remove heavy borders) */
+  p, li {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    margin-left: 0;
+    color: var(--light);
+  }
+  
+  ul, ol { padding-left: 1.2rem; }
+  li + li { margin-top: 6px; }
+  
+  /* images */
+  img {
+    border: 3px solid var(--gold);
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #profile {
+    border-radius: 50%;
+    border: 4px solid var(--gold);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #141414;
+    color: #aaaaaa;
+    padding: 14px;
+    margin-top: 24px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 0.95rem;
+  }
+  
+  /* Button for resume/contact */
+  .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--gold);
+    color: #121212;
+    font-weight: 700;
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #c39a2f; 
+    border-color: #c39a2f;
+  }
+  
+  
