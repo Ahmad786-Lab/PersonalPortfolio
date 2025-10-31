@@ -1,22 +1,21 @@
 :root {
-  --gold: #D3AF37;
-  --light: #D9D9D9;
-  --dark: #1E1E1E;
+  --gold: #d3af37;
+  --light: #d9d9d9;
+  --dark: #1e1e1e;
 }
-                       /* Images On the Top */
+/* Images On the Top */
 .Any-img {
   width: 160px;
   height: 160px;
   object-fit: cover;
-  border: 6px solid #D3AF37;
+  border: 6px solid #d3af37;
 }
 .Any-img2 {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border: 4px solid #D3AF37;
+  border: 4px solid #d3af37;
 }
-
 
 .section-title {
   scroll-margin-top: 6rem;
@@ -24,7 +23,7 @@
 
 /* gold button variant */
 .btn-gold {
-  background-color: #D3AF37;
+  background-color: #d3af37;
   border: none;
   color: #000;
   font-weight: 600;
@@ -36,7 +35,7 @@
 
 /* page basics */
 body {
-  font-family: "Orbitron", "Rajdhani", "Share Tech Mono", monospace; 
+  font-family: "Orbitron", "Rajdhani", "Share Tech Mono", monospace;
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--dark);
@@ -48,10 +47,14 @@ body {
 
 /* make text a bit bigger on bigger screens */
 @media (min-width: 768px) {
-  body { font-size: 18px; }
+  body {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1024px) {
-  body { font-size: 19px; }
+  body {
+    font-size: 19px;
+  }
 }
 
 /* header with a simple line */
@@ -67,7 +70,7 @@ h1 {
   font-size: 2.6rem;
   font-weight: 700;
   color: #ffffff; /* clearer main title */
-  text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   display: block;
   width: fit-content;
   margin: 0 auto;
@@ -83,7 +86,9 @@ h2 {
   padding-bottom: 4px;
 }
 
-h3 { color: var(--light); }
+h3 {
+  color: var(--light);
+}
 
 h4 {
   display: block;
@@ -92,23 +97,24 @@ h4 {
   color: var(--gold);
   font-weight: 700;
 }
-                   /* Navbar */
+/* Navbar */
 
 /* bootstrap navbar links */
 .navbar-dark .navbar-nav .nav-link {
   color: #f8f9fa !important;
   font-weight: 600;
-  transition: color 0.3s ease, background-color 0.3s ease; 
+  transition: color 0.3s ease, background-color 0.3s ease;
   display: inline-block;
-  padding: 0.5rem 1rem; 
-  border-radius: 6px; 
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
 }
 .navbar .navbar-nav .nav-link {
-  line-height: 1.5;      /* this controls the spacing vertical  */
+  line-height: 1.5; /* this controls the spacing vertical  */
 }
 .navbar .navbar-nav .nav-item {
   display: flex;
-  align-items: center;   /* centers link text vertically */
+  align-items: center; /* centers link text vertically */
+  margin-left: 8px; /* space between links */
 }
 /* Hover and focus */
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -130,7 +136,7 @@ section {
   margin: 16px;
   border-radius: 10px;
   background-color: #222;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border: 1px solid #333;
   color: var(--light);
   text-align: left;
@@ -140,7 +146,8 @@ section {
 }
 
 /* paragraphs & lists */
-p, li {
+p,
+li {
   border: none;
   padding: 0;
   border-radius: 0;
@@ -148,8 +155,13 @@ p, li {
   color: var(--light);
 }
 
-ul, ol { padding-left: 1.2rem; }
-li + li { margin-top: 6px; }
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+li + li {
+  margin-top: 6px;
+}
 
 /* images */
 img {
@@ -186,39 +198,43 @@ footer {
   border-color: #c39a2f;
 }
 
-
-
 .badge {
-  display:inline-flex;
-  align-items:center;
-  border-radius:999px;
-  padding:8px 16px;
-  font-weight:600;
-  letter-spacing:.02em;
-  border-width:1px; 
-  transition: transform .18s ease, box-shadow .25s ease, filter .25s ease;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-width: 1px;
+  transition: transform 0.18s ease, box-shadow 0.25s ease, filter 0.25s ease;
   will-change: transform, box-shadow;
-  }
-  
-  /* Hover efect for the BADGE*/
-  .badge:hover {
+}
+
+/* Hover efect for the BADGE*/
+.badge:hover {
   transform: translateY(-2px);
-  box-shadow:
-  0 0 0 1px currentColor inset, 
-  0 0 14px currentColor, 
-  0 6px 20px rgba(0,0,0,.6); 
-  filter: brightness(1.06); 
-  }
-  
-  /* keep it Active */
-  .badge:active {
+  box-shadow: 0 0 0 1px currentColor inset, 0 0 14px currentColor,
+    0 6px 20px rgba(0, 0, 0, 0.6);
+  filter: brightness(1.06);
+}
+
+/* keep it Active */
+.badge:active {
   transform: translateY(0);
-  box-shadow:
-  0 0 0 1px currentColor inset,
-  0 0 8px currentColor,
-  0 3px 10px rgba(0,0,0,.65);
+  box-shadow: 0 0 0 1px currentColor inset, 0 0 8px currentColor,
+    0 3px 10px rgba(0, 0, 0, 0.65);
   filter: brightness(1);
+}
+
+/*  Dark mode This is best for the night time */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #0f172a;
+    --ink: #e5e7eb;
+    --muted: #94a3b8;
+    --accent: #cbd5e1;
+    --ring: #60a5fa;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   }
-
-
-
+}
