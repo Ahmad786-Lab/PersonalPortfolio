@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbarCollapse = document.querySelector(".navbar-collapse");
 
   // Get all navbar links including the navbar-brand
-  const navbarLinks = document.querySelectorAll(".my-nav a");
+  const navbarLinks = document.querySelectorAll(".navbar a");
 
   // Add an event listener to each navbar link
   navbarLinks.forEach((navbarLink) =>
